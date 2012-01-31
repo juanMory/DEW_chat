@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Titulo:</b>
+  <%= @regpubli.Titulo %>
+</p>
+
+<p>
+  <b>Fecha inicio:</b>
+  <%= @regpubli.Fecha_Inicio %>
+</p>
+
+<p>
+  <b>Fecha fin:</b>
+  <%= @regpubli.Fecha_fin %>
+</p>
+
+<p>
+  <b>Tarifa:</b>
+  <%= @regpubli.Tarifa %>
+</p>
+
+<p>
+  <b>Num click:</b>
+  <%= @regpubli.Num_Click %>
+</p>
+
+<p>
+  <b>Ubicacion:</b>
+  <%= @regpubli.Ubicacion %>
+</p>
+
+<p>
+  <b>Contenido:</b>
+  <%= @regpubli.Contenido %>
+</p>
+
+
+<%= link_to 'Edit', edit_regpubli_path(@regpubli) %> |
+<%= link_to 'Back', regpublis_path %>

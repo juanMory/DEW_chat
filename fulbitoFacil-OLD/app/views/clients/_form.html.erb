@@ -1,0 +1,65 @@
+<%= form_for(@client) do |f| %>
+  <% if @client.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@client.errors.count, "error") %> prohibited this client from being saved:</h2>
+
+      <ul>
+      <% @client.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Nombres %><br />
+    <%= f.text_field :Nombres %>
+  </div>
+  <div class="field">
+    <%= f.label :Apellido_Paterno %><br />
+    <%= f.text_field :Apellido_Paterno %>
+  </div>
+  <div class="field">
+    <%= f.label :Apellido_Materno %><br />
+    <%= f.text_field :Apellido_Materno %>
+  </div>
+  <div class="field">
+    <%= f.label :Sexo %><br />
+    <%= f.text_field :Sexo %>
+  </div>
+  <div class="field">
+    <%= f.label :Tipo_Documento %><br />
+    <%= f.text_field :Tipo_Documento %>
+  </div>
+  <div class="field">
+    <%= f.label :Numero_documento %><br />
+    <%= f.text_field :Numero_documento %>
+  </div>
+  <div class="field">
+    <%= f.label :Direccion %><br />
+    <%= f.text_field :Direccion %>
+  </div>
+  <div class="field">
+    <%= f.label :Distrito %><br />
+    <%= f.text_field :Distrito %>
+  </div>
+  <div class="field">
+    <%= f.label :correo_electronico %><br />
+    <%= f.text_field :correo_electronico %>
+  </div>
+  <div class="field">
+    <%= f.label :Confirmar_Correo_electronico %><br />
+    <%= f.text_field :Confirmar_Correo_electronico %>
+  </div>
+  <div class="field">
+    <%= f.label :Password %><br />
+    <%= f.text_field :Password %>
+  </div>
+  <div class="field">
+    <%= f.label :Confimar_Password %><br />
+    <%= f.text_field :Confimar_Password %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

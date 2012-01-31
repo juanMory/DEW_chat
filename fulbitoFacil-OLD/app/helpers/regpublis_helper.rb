@@ -1,0 +1,2 @@
+module RegpublisHelper
+end

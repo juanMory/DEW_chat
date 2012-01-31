@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Titulo: MyString
+  Fecha_Inicio: 2012-01-26
+  Fecha_fin: 2012-01-26
+  Tarifa: 1
+  Num_Click: false
+  Ubicacion: MyString
+  Contenido: MyText
+
+two:
+  Titulo: MyString
+  Fecha_Inicio: 2012-01-26
+  Fecha_fin: 2012-01-26
+  Tarifa: 1
+  Num_Click: false
+  Ubicacion: MyString
+  Contenido: MyText

@@ -1,0 +1,29 @@
+<%= form_for(@local1) do |f| %>
+  <% if @local1.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@local1.errors.count, "error") %> prohibited this local1 from being saved:</h2>
+
+      <ul>
+      <% @local1.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Nombre_local %><br />
+    <%= f.text_field :Nombre_local %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion %><br />
+    <%= f.text_field :direccion %>
+  </div>
+  <div class="field">
+    <%= f.label :distrito %><br />
+    <%= f.text_field :distrito %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

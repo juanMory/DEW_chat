@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombres:</b>
+  <%= @client.Nombres %>
+</p>
+
+<p>
+  <b>Apellido paterno:</b>
+  <%= @client.Apellido_Paterno %>
+</p>
+
+<p>
+  <b>Apellido materno:</b>
+  <%= @client.Apellido_Materno %>
+</p>
+
+<p>
+  <b>Sexo:</b>
+  <%= @client.Sexo %>
+</p>
+
+<p>
+  <b>Tipo documento:</b>
+  <%= @client.Tipo_Documento %>
+</p>
+
+<p>
+  <b>Numero documento:</b>
+  <%= @client.Numero_documento %>
+</p>
+
+<p>
+  <b>Direccion:</b>
+  <%= @client.Direccion %>
+</p>
+
+<p>
+  <b>Distrito:</b>
+  <%= @client.Distrito %>
+</p>
+
+<p>
+  <b>Correo electronico:</b>
+  <%= @client.correo_electronico %>
+</p>
+
+<p>
+  <b>Confirmar correo electronico:</b>
+  <%= @client.Confirmar_Correo_electronico %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @client.Password %>
+</p>
+
+<p>
+  <b>Confimar password:</b>
+  <%= @client.Confimar_Password %>
+</p>
+
+
+<%= link_to 'Edit', edit_client_path(@client) %> |
+<%= link_to 'Back', clients_path %>
